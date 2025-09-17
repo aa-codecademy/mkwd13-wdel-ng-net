@@ -63,3 +63,7 @@ _____________________________________________________________
 1. Install visual studio 2022 - `STEP BY STEP GUIDE => https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022`
 
 2. Install and set up PostgreSQL and PGAdmin4 - `STEP BY STEP GUIDE => https://commandprompt.com/education/how-to-download-and-install-postgresql/`
+
+## TRAINER CONTACT
+Aneta Stankovska - anetastankovskaane@gmail.com
+Todor Pelivanov - tpelivanov@gmail.com
