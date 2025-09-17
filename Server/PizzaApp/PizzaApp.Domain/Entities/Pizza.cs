@@ -1,4 +1,6 @@
-﻿namespace PizzaApp.Domain.Entities
+﻿using PizzaApp.Domain.Enums;
+
+namespace PizzaApp.Domain.Entities
 {
     public class Pizza
     {
