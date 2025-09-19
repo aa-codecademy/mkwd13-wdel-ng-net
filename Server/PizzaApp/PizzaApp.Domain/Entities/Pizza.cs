@@ -1,4 +1,5 @@
 ﻿using PizzaApp.Domain.Enums;
+using System.Text.Json.Serialization;
 
 namespace PizzaApp.Domain.Entities
 {
@@ -12,6 +13,7 @@ namespace PizzaApp.Domain.Entities
         public string UserId { get; set; }
         public User User { get; set; }
         public int? OrderId { get; set; }
+        [JsonIgnore]
         public Order Order { get; set; }
     }
 }
