@@ -64,6 +64,10 @@ _____________________________________________________________
 
 2. Install and set up PostgreSQL and PGAdmin4 - `STEP BY STEP GUIDE => https://commandprompt.com/education/how-to-download-and-install-postgresql/`
 
+## Entity Framework commands
+1. add-migration initial => (where initial is custom name for the migration, can be anything)
+2. update-database => applies the current migration on the database
+
 ## TRAINER CONTACT
 - Aneta Stankovska - anetastankovskaane@gmail.com
 - Todor Pelivanov - tpelivanov@gmail.com
