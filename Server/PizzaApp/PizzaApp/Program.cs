@@ -35,6 +35,7 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfile).Assembly); // Adding au
 builder.Services.AddSwaggerGen();
 
 DIHelper.InjectRepositories(builder.Services);
+DIHelper.InjectServices(builder.Services);
 
 var app = builder.Build();
 
