@@ -6,10 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="CustomExceptions\ServerExceptions\" />
-    <Folder Include="CustomExceptions\PizzaExceptions\" />
-    <Folder Include="CustomExceptions\OrderExceptions\" />
-  </ItemGroup>
-
 </Project>
