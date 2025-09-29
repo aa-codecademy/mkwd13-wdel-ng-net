@@ -87,5 +87,53 @@ namespace PizzaApp.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePizza(int id)
+        {
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return BadRequest("No user identified!");
+                var response = await _PizzaService.DeletePizza(userId, id);
+                return Response(response);
+            }
+            catch (PizzaDataException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (PizzaNotfoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdatePizza(int id, [FromBody] UpdatePizzaDto updatePizzaDto)
+        {
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return BadRequest("No user identified!");
+                var response = await _PizzaService.updatePizza(userId, id, updatePizzaDto);
+                return Response(response);
+            }
+            catch (PizzaDataException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (PizzaNotfoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
     }
 }
