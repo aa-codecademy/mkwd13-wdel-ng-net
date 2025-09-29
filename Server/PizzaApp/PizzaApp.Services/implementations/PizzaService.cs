@@ -28,6 +28,7 @@ namespace PizzaApp.Services.implementations
                 pizza.UserId = userId;
                 await _pizzaRepository.Add(pizza);
                 var pizzaDtoResult = _mapper.Map<PizzaDto>(addPizzaDto);
+                pizzaDtoResult.UserId = pizza.UserId;
                 return new CustomResponse<PizzaDto>() { IsSuccessfull = true, Result = pizzaDtoResult };
             }
             catch (Exception)
