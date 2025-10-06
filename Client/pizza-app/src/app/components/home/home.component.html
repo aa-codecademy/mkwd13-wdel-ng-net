@@ -1,7 +1,23 @@
 <div class="wrapper">
-  <mat-card> </mat-card>
+  <mat-card>
+    <img
+      height="100%"
+      width="600px"
+      mat-card-image
+      src="/assets/pizza-maker-logo.png"
+      alt="Logo"
+    />
+    <mat-card-actions>
+      @if (isLoggedIn()) {
+      <button mat-fab extended color="primary" routerLink="/pizza-maker">
+        Make your pizza now!
+      </button>
+      }
+    </mat-card-actions>
+  </mat-card>
   <h1>
     Don't know what ingredient to choose? Get inspired by our most popular
     pizzas...
   </h1>
+  <!-- import pizza cards -->
 </div>

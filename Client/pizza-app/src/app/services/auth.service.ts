@@ -104,7 +104,7 @@ export class AuthService {
     this.router.navigate(['/login']);
   }
 
-  // How to subscribe to an observable
+  // How to subscribe to an observable to get the result in your code
   getUser() {
     return this.http.get(`${apiUrl}/User`).subscribe((result) => {
       console.log(result);
