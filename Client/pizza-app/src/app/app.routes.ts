@@ -23,6 +23,14 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'pizza-maker',
+    // we add the authGuard to the route, so that it will be executed before the component is loaded
+    loadComponent: () =>
+      import('./components/pizza-maker/pizza-maker.component').then(
+        (module) => module.PizzaMakerComponent
+      ),
+  },
+  {
     path: 'not-allowed',
     component: NotAllowedComponent,
   },

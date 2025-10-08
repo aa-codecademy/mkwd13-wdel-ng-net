@@ -1,0 +1,11 @@
+<h1>Ingredients</h1>
+
+<mat-selection-list (selectionChange)="onSelect($event)">
+  @for (ingredient of ingredients; track ingredient) {
+  <mat-list-option
+    [value]="ingredient"
+    [selected]="selectedIngredients().includes(ingredient)"
+    >{{ ingredient | normalizeEnum }}
+  </mat-list-option>
+  }
+</mat-selection-list>

@@ -31,7 +31,7 @@ export class HotPizzaDirective {
     );
 
     if (hasChilliPeppers) {
-      this.renderer.setStyle(this.el.nativeElement, 'border', '1px, solid red');
+      this.renderer.setStyle(this.el.nativeElement, 'border', '2px, solid red');
     }
   }
 }
