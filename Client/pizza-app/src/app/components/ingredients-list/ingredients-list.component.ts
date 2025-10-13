@@ -18,8 +18,8 @@ export class IngredientsListComponent {
   selectedIngredients = input<Ingredient[]>([]);
 
   // onSelectIngredients is used to emit the selected items to the parent component
-  // This is not a regular data type property, it is an event emitter
-  onSelectIngredient = output<Ingredient[]>();
+  // This is not a regular datat type property, it is an event emitter
+  onSelectIngredients = output<Ingredient[]>();
 
   // ingredients are used to display the INITIAL list of ingredients. This list is not updated in case of deletion in the sibling component
   // Enums are actually objects in JS/TS, so we need to use Object.values() to get the values of the enum
@@ -28,8 +28,8 @@ export class IngredientsListComponent {
   constructor(private pizzaService: PizzaService) {}
 
   onSelect(event: any) {
-    // Emint the selected items to the parent component by using .emit() on the output reference
-    this.onSelectIngredient.emit(
+    // Emit the selected items to the parent component by using .emit() on the output reference
+    this.onSelectIngredients.emit(
       event.source.selectedOptions.selected.map(
         (item: MatChipOption) => item.value
       )

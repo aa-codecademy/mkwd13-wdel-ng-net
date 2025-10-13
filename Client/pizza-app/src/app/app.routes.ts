@@ -31,6 +31,14 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'previous-orders',
+    // we add the authGuard to the route, so that it will be executed before the component is loaded
+    loadComponent: () =>
+      import('./components/previous-orders/previous-orders.component').then(
+        (module) => module.PreviousOrdersComponent
+      ),
+  },
+  {
     path: 'not-allowed',
     component: NotAllowedComponent,
   },

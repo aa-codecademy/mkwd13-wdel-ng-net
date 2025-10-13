@@ -1,10 +1,13 @@
 <div class="wrapper">
   <!-- left column -->
   <app-ingredients-list
-    (onSelectIngredient)="handleSelectIngredient($event)"
+    (onSelectIngredients)="handleSelectIngredient($event)"
     [selectedIngredients]="ingredients()"
   />
 
   <!-- right column -->
-  <!-- Add selected ingredients component -->
+  <app-selected-ingredients
+    (handleDeleteIngredient)="handleDeleteIngredient($event)"
+    [selectedIngredients]="ingredients()"
+  />
 </div>

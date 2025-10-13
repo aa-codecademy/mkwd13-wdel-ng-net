@@ -1,0 +1,19 @@
+.pizza-action-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+
+  > button {
+    margin-bottom: 10px;
+  }
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.name {
+  flex: 1;
+}

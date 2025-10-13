@@ -1,1 +1,42 @@
-<p>selected-ingredients works!</p>
+<h1>Selected ingredients</h1>
+
+<mat-list>
+  @for (ingredient of selectedIngredients(); track ingredient) {
+  <mat-list-item class="ingredient-item">
+    <button
+      mat-icon-button
+      color="warn"
+      (click)="onDeleteIngredient(ingredient)"
+    >
+      <mat-icon>delete</mat-icon>
+    </button>
+    <span class="name">{{ ingredient | normalizeEnum }}</span>
+  </mat-list-item>
+  }
+</mat-list>
+
+<mat-button-toggle-group [value]="size" (change)="onSizeChange($event)">
+  <mat-button-toggle value="SMALL">Small</mat-button-toggle>
+  <mat-button-toggle value="MEDIUM">Medium</mat-button-toggle>
+  <mat-button-toggle value="LARGE">Large</mat-button-toggle>
+</mat-button-toggle-group>
+
+<div class="pizza-action-btns">
+  <button
+    [disabled]="!selectedIngredients().length"
+    mat-raised-button
+    color="primary"
+    (click)="savePizza()"
+  >
+    Make Order
+  </button>
+  <button
+    [disabled]="!selectedIngredients().length"
+    mat-raised-button
+    color="primary"
+    (click)="savePizzaAndMakeAnother()"
+  >
+    Make Another
+  </button>
+  <button mat-raised-button color="warn" (click)="onReset()">Reset</button>
+</div>
