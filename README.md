@@ -4,14 +4,14 @@
 
 ## Module plan
 
-1. [Angular] Initializing Angular Project, Creating Components, Routing, Directives, Modules
-2. [Angular] Services, Dependency Injection, Lifecycle Methods, Custom Pipes, Custom Directives, Inputs, Outputs
-3. [Angular] Forms, Reactive Forms, Form Validation, Observables, Pipes
-4. [.NET] Getting familiar with c# .NET, Initializing and setting new Project, explainig design pattern and how it works, basic OOP knowledge, setting up PGAdmin
-5. [.NET] Login Register with Identity - explaining services, extension methods, Custom exceptions, JWT, Password Hashing
-6. [.NET] Creating Pizza Endpoint - Mappings, Dtos, Automapper
-7. [.NET] Creating Order Endpoint - Connecting with pizza
-8. [.NET] Finishing Endpoints logic, SOLID, DRY, KISS, organizing program.cs with best practises
+1. [.NET] Getting familiar with c# .NET, Initializing and setting new Project, explainig design pattern and how it works, basic OOP knowledge, setting up PGAdmin
+2. [.NET] Login Register with Identity - explaining services, extension methods, Custom exceptions, JWT, Password Hashing
+3. [.NET] Creating Pizza Endpoint - Mappings, Dtos, Automapper
+4. [.NET] Creating Order Endpoint - Connecting with pizza
+5. [.NET] Finishing Endpoints logic, SOLID, DRY, KISS, organizing program.cs with best practises
+6. [Angular] Initializing Angular Project, Creating Components, Routing, Directives, Modules
+7. [Angular] Services, Dependency Injection, Lifecycle Methods, Custom Pipes, Custom Directives, Inputs, Outputs
+8. [Angular] Forms, Reactive Forms, Form Validation, Observables, Pipes
 9. [Angular] Authentication, Guards, Interceptors
 10. [Angular] HTTP Client, RXJS Operators, Error Handling
 
@@ -80,6 +80,15 @@
 
 1. add-migration initial => (where initial is custom name for the migration, can be anything)
 2. update-database => applies the current migration on the database
+
+## USEFULL LINKS
+- https://www.w3resource.com/csharp-exercises/basic/index.php
+- https://medium.com/@techworldwithmilan/net-developer-roadmap-2023-c1a9a102748e
+- https://roadmap.sh/r?id=65298644f43a58c923c6e675
+- https://roadmap.sh/aspnet-core
+- https://www.mongodb.com/resources/basics/databases/acid-transactions
+- https://refactoring.guru/design-patterns/csharp
+- https://www.c-sharpcorner.com/article/c-sharp-security-best-practices-for-secure-coding/
 
 ## TRAINER CONTACT
 
